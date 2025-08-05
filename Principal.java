@@ -21,6 +21,7 @@ class Guerreiro extends Personagem {
     public void atacar() {
         System.out.println(nome + " ataca com espada!");
     }
+    
 }
 
 class Mago extends Personagem {
@@ -33,6 +34,18 @@ class Mago extends Personagem {
         System.out.println(nome + " lança um feitiço!");
     }
 }
+
+class Arqueiro extends Personagem {
+    public Arqueiro(String nome) {
+        super(nome);
+    }
+
+    @Override
+    public void atacar() {
+        System.out.println(nome + " lança um feitiço!");
+    }
+}
+
 
 // Classe principal para execução (Polimorfismo)
 public class Principal {
